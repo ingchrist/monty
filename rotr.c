@@ -1,26 +1,26 @@
 #include "monty.h"
 /**
   *f_rotr- rotates the stack to the bottom
-  *@head: stack head
+  *@wqzhd: stack wqzhd
   *@counter: line_number
   *Return: no return
  */
-void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter)
+void wzqf_rt(stack_t **wqzhd, __attribute__((unused)) unsigned int counter)
 {
-	stack_t *copy;
+	stack_t *wqzcpy;
 
-	copy = *head;
-	if (*head == NULL || (*head)->next == NULL)
+	wqzcpy = *wqzhd;
+	if (*wqzhd == NULL || (*wqzhd)->next == NULL)
 	{
 		return;
 	}
-	while (copy->next)
+	while (wqzcpy->next)
 	{
-		copy = copy->next;
+		wqzcpy = wqzcpy->next;
 	}
-	copy->next = *head;
-	copy->prev->next = NULL;
-	copy->prev = NULL;
-	(*head)->prev = copy;
-	(*head) = copy;
+	wqzcpy->next = *wqzhd;
+	wqzcpy->prev->next = NULL;
+	wqzcpy->prev = NULL;
+	(*wqzhd)->prev = wqzcpy;
+	(*wqzhd) = wqzcpy;
 }

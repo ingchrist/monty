@@ -22,7 +22,7 @@ int wzqxct(char *wzqctt, stack_t **stack, unsigned int wzqcnt, FILE *file)
 				{"pchar", wzqf_chr},
 				{"pstr", wqzf_pr},
 				{"rotl", f_rotl},
-				{"rotr", f_rotr},
+				{"rotr", wzqf_rt},
 				{"queue", wzqf_que},
 				{"stack", f_stack},
 				{NULL, NULL}
