@@ -67,7 +67,7 @@ void f_sub(stack_t **head, unsigned int counter);
 void wqz_dv(stack_t **head, unsigned int counter);
 void wzqf_ml(stack_t **head, unsigned int counter);
 void wzq_md(stack_t **head, unsigned int counter);
-void f_pchar(stack_t **head, unsigned int counter);
+void wzqf_chr(stack_t **head, unsigned int counter);
 void f_pstr(stack_t **head, unsigned int counter);
 void f_rotl(stack_t **head, unsigned int counter);
 void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);

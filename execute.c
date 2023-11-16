@@ -19,7 +19,7 @@ int wzqxct(char *wzqctt, stack_t **stack, unsigned int wzqcnt, FILE *file)
 				{"div", wqz_dv},
 				{"mul", wzqf_ml},
 				{"mod", wzq_md},
-				{"pchar", f_pchar},
+				{"pchar", wzqf_chr},
 				{"pstr", f_pstr},
 				{"rotl", f_rotl},
 				{"rotr", f_rotr},
