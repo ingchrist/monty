@@ -12,7 +12,7 @@ int wzqxct(char *wzqctt, stack_t **stack, unsigned int wzqcnt, FILE *file)
 	instruction_t opst[] = {
 				{"push", wqzf_ph}, {"pall", wzqf_pll}, {"pint", f_pint},
 				{"pop", wzq_pp},
-				{"swap", f_swap},
+				{"swap", wqz_swp},
 				{"add", f_add},
 				{"nop", f_nop},
 				{"sub", wzqf_sb},
