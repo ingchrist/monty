@@ -65,7 +65,7 @@ void f_add(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
 void f_sub(stack_t **head, unsigned int counter);
 void wqz_dv(stack_t **head, unsigned int counter);
-void f_mul(stack_t **head, unsigned int counter);
+void wzqf_ml(stack_t **head, unsigned int counter);
 void wzq_md(stack_t **head, unsigned int counter);
 void f_pchar(stack_t **head, unsigned int counter);
 void f_pstr(stack_t **head, unsigned int counter);
