@@ -63,7 +63,7 @@ void wzq_pp(stack_t **head, unsigned int counter);
 void f_swap(stack_t **head, unsigned int counter);
 void f_add(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
-void f_sub(stack_t **head, unsigned int counter);
+void wzqf_sb(stack_t **head, unsigned int counter);
 void wqz_dv(stack_t **head, unsigned int counter);
 void wzqf_ml(stack_t **head, unsigned int counter);
 void wzq_md(stack_t **head, unsigned int counter);
