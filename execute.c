@@ -24,7 +24,7 @@ int wzqxct(char *wzqctt, stack_t **stack, unsigned int wzqcnt, FILE *file)
 				{"rotl", f_rotl},
 				{"rotr", wzqf_rt},
 				{"queue", wzqf_que},
-				{"stack", f_stack},
+				{"stack", wzqf_tk},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;
