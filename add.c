@@ -1,32 +1,32 @@
 #include "monty.h"
 /**
- * f_add - adds the top two elements of the stack.
- * @head: stack head
- * @counter: line_number
+ * wzq_add - adds the top two elements of the stack.
+ * @wzqhd: stack wzqhd
+ * @wzqctr: line_number
  * Return: no return
 */
-void f_add(stack_t **head, unsigned int counter)
+void wzq_addwz(stack_t **wzqhd, unsigned int wzqctr)
 {
 	stack_t *h;
-	int len = 0, aux;
+	int wzqlen = 0, aux;
 
-	h = *head;
+	h = *wzqhd;
 	while (h)
 	{
 		h = h->next;
-		len++;
+		wzqlen++;
 	}
-	if (len < 2)
+	if (wzqlen < 2)
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", counter);
+		fprintf(stderr, "L%d: can't add, stack too short\n", wzqctr);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*head);
+		free_stack(*wzqhd);
 		exit(EXIT_FAILURE);
 	}
-	h = *head;
+	h = *wzqhd;
 	aux = h->n + h->next->n;
 	h->next->n = aux;
-	*head = h->next;
+	*wzqhd = h->next;
 	free(h);
 }
