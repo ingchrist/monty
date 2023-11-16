@@ -1,13 +1,13 @@
 #include "monty.h"
 /**
  * f_queue - prints the top
- * @head: stack head
+ * @wzqhd: stack wzqhd
  * @counter: line_number
  * Return: no return
 */
-void f_queue(stack_t **head, unsigned int counter)
+void wzqf_que(stack_t **wzqhd, unsigned int counter)
 {
-	(void)head;
+	(void)wzqhd;
 	(void)counter;
 	bus.lifi = 1;
 }
@@ -15,21 +15,21 @@ void f_queue(stack_t **head, unsigned int counter)
 /**
  * addqueue - add node to the tail stack
  * @n: new_value
- * @head: head of the stack
+ * @wzqhd: wzqhd of the stack
  * Return: no return
 */
-void addqueue(stack_t **head, int n)
+void wzqdque(stack_t **wzqhd, int n)
 {
-	stack_t *new_node, *aux;
+	stack_t *wzqnw_nd, *aux;
 
-	aux = *head;
-	new_node = malloc(sizeof(stack_t));
-	if (new_node == NULL)
+	aux = *wzqhd;
+	wzqnw_nd = malloc(sizeof(stack_t));
+	if (wzqnw_nd == NULL)
 	{
 		printf("Error\n");
 	}
-	new_node->n = n;
-	new_node->next = NULL;
+	wzqnw_nd->n = n;
+	wzqnw_nd->next = NULL;
 	if (aux)
 	{
 		while (aux->next)
@@ -37,12 +37,12 @@ void addqueue(stack_t **head, int n)
 	}
 	if (!aux)
 	{
-		*head = new_node;
-		new_node->prev = NULL;
+		*wzqhd = wzqnw_nd;
+		wzqnw_nd->prev = NULL;
 	}
 	else
 	{
-		aux->next = new_node;
-		new_node->prev = aux;
+		aux->next = wzqnw_nd;
+		wzqnw_nd->prev = aux;
 	}
 }

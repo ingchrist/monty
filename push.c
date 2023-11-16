@@ -33,5 +33,5 @@ void wqzf_ph(stack_t **qwzhd, unsigned int counter)
 	if (bus.lifi == 0)
 		wzqdnd(qwzhd, n);
 	else
-		addqueue(qwzhd, n);
+		wzqdque(qwzhd, n);
 }
