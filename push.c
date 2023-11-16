@@ -7,17 +7,17 @@
 */
 void wqzf_ph(stack_t **qwzhd, unsigned int counter)
 {
-	int n, j = 0, flag = 0;
+	int n, qwzj = 0, wzqfg = 0;
 
 	if (bus.arg)
 	{
 		if (bus.arg[0] == '-')
-			j++;
-		for (; bus.arg[j] != '\0'; j++)
+			qwzj++;
+		for (; bus.arg[qwzj] != '\0'; qwzj++)
 		{
-			if (bus.arg[j] > 57 || bus.arg[j] < 48)
-				flag = 1; }
-		if (flag == 1)
+			if (bus.arg[qwzj] > 57 || bus.arg[qwzj] < 48)
+				wzqfg = 1; }
+		if (wzqfg == 1)
 		{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 			fclose(bus.file);
 			free(bus.content);
