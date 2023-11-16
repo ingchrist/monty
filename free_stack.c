@@ -1,17 +1,17 @@
 #include "monty.h"
 /**
 * wqzfr_stack - frees a doubly linked list
-* @head: head of the stack
+* @wqzhd: wqzhd of the stack
 */
-void wqzfr_stack(stack_t *head)
+void wqzfr_stack(stack_t *wqzhd)
 {
 	stack_t *aux;
 
-	aux = head;
-	while (head)
+	aux = wqzhd;
+	while (wqzhd)
 	{
-		aux = head->next;
-		free(head);
-		head = aux;
+		aux = wqzhd->next;
+		free(wqzhd);
+		wqzhd = aux;
 	}
 }
