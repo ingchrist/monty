@@ -21,3 +21,5 @@ void wzq_pp(stack_t **qwzhd, unsigned int qwzntr)
 	*qwzhd = h->next;
 	free(h);
 }
+
+
