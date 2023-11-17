@@ -30,3 +30,5 @@ void wzq_addwz(stack_t **wzqhd, unsigned int wzqctr)
 	*wzqhd = h->next;
 	free(h);
 }
+
+
