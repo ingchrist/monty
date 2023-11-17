@@ -23,3 +23,5 @@ void wqzf_pr(stack_t **wqzhd, unsigned int zqwcnt)
 	}
 	printf("\n");
 }
+
+
