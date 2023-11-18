@@ -1,40 +1,40 @@
 #include "monty.h"
 /**
  * f_div - divides the top two elements of the stack.
- * @wzqhd: stack wzqhd
- * @wzqctr: line_number
+ * @head: stack head
+ * @counter: line_number
  * Return: no return
 */
-void wqz_dv(stack_t **wzqhd, unsigned int wzqctr)
+void f_div(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
-	int wzqlen = 0, aux;
+	int len = 0, aux;
 
-	h = *wzqhd;
+	h = *head;
 	while (h)
 	{
 		h = h->next;
-		wzqlen++;
+		len++;
 	}
-	if (wzqlen < 2)
+	if (len < 2)
 	{
-		fprintf(stderr, "L%d: can't div, stack too short\n", wzqctr);
+		fprintf(stderr, "L%d: can't div, stack too short\n", counter);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*wzqhd);
+		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	h = *wzqhd;
+	h = *head;
 	if (h->n == 0)
 	{
-		fprintf(stderr, "L%d: division by zero\n", wzqctr);
+		fprintf(stderr, "L%d: division by zero\n", counter);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*wzqhd);
+		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	aux = h->next->n / h->n;
 	h->next->n = aux;
-	*wzqhd = h->next;
+	*head = h->next;
 	free(h);
 }

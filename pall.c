@@ -1,16 +1,16 @@
 #include "monty.h"
 /**
  * f_pall - prints the stack
- * @wzqhd: stack wzqhd
- * @wzqcnt: no used
+ * @head: stack head
+ * @counter: no used
  * Return: no return
 */
-void wzqf_pll(stack_t **wzqhd, unsigned int wzqcnt)
+void f_pall(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
-	(void)wzqcnt;
+	(void)counter;
 
-	h = *wzqhd;
+	h = *head;
 	if (h == NULL)
 		return;
 	while (h)
