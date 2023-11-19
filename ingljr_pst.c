@@ -2,16 +2,16 @@
 /**
  * f_pstr - prints the string starting at the top of the stack,
  * followed by a new
- * @head: stack head
- * @counter: line_number
+ * @wqzhd: stack wqzhd
+ * @zqwcnt: line_number
  * Return: no return
 */
-void f_pstr(stack_t **head, unsigned int counter)
+void wqzf_pr(stack_t **wqzhd, unsigned int zqwcnt)
 {
 	stack_t *h;
-	(void)counter;
+	(void)zqwcnt;
 
-	h = *head;
+	h = *wqzhd;
 	while (h)
 	{
 		if (h->n > 127 || h->n <= 0)
@@ -23,3 +23,5 @@ void f_pstr(stack_t **head, unsigned int counter)
 	}
 	printf("\n");
 }
+
+

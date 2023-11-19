@@ -1,37 +1,37 @@
 #include "monty.h"
 /**
  * f_push - add node to the stack
- * @head: stack head
+ * @qwzhd: stack qwzhd
  * @counter: line_number
  * Return: no return
 */
-void f_push(stack_t **head, unsigned int counter)
+void wqzf_ph(stack_t **qwzhd, unsigned int counter)
 {
-	int n, j = 0, flag = 0;
+	int n, qwzj = 0, wzqfg = 0;
 
 	if (bus.arg)
 	{
 		if (bus.arg[0] == '-')
-			j++;
-		for (; bus.arg[j] != '\0'; j++)
+			qwzj++;
+		for (; bus.arg[qwzj] != '\0'; qwzj++)
 		{
-			if (bus.arg[j] > 57 || bus.arg[j] < 48)
-				flag = 1; }
-		if (flag == 1)
+			if (bus.arg[qwzj] > 57 || bus.arg[qwzj] < 48)
+				wzqfg = 1; }
+		if (wzqfg == 1)
 		{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 			fclose(bus.file);
 			free(bus.content);
-			free_stack(*head);
+			free_stack(*qwzhd);
 			exit(EXIT_FAILURE); }}
 	else
 	{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*head);
+		free_stack(*qwzhd);
 		exit(EXIT_FAILURE); }
 	n = atoi(bus.arg);
 	if (bus.lifi == 0)
-		addnode(head, n);
+		wzqdnd(qwzhd, n);
 	else
-		addqueue(head, n);
+		wzqdque(qwzhd, n);
 }

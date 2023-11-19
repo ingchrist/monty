@@ -1,1 +1,1 @@
-this are the instruction for this directorythis are the instruction for this directory
+This project is done by ing james bozy and ing christian djinguet

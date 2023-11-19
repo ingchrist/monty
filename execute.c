@@ -1,51 +1,51 @@
 #include "monty.h"
 /**
-* execute - executes the opcode
+* wzqxct - wzqxcts the opcode
 * @stack: head linked list - stack
-* @counter: line_counter
+* @wzqcnt: line_wzqcnt
 * @file: poiner to monty file
-* @content: line content
+* @wzqctt: line wzqctt
 * Return: no return
 */
-int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
+int wzqxct(char *wzqctt, stack_t **stack, unsigned int wzqcnt, FILE *file)
 {
 	instruction_t opst[] = {
-				{"push", f_push}, {"pall", f_pall}, {"pint", f_pint},
-				{"pop", f_pop},
-				{"swap", f_swap},
+				{"push", wqzf_ph}, {"pall", wzqf_pll}, {"pint", f_pint},
+				{"pop", wzq_pp},
+				{"swap", wqz_swp},
 				{"add", f_add},
 				{"nop", f_nop},
-				{"sub", f_sub},
-				{"div", f_div},
-				{"mul", f_mul},
-				{"mod", f_mod},
-				{"pchar", f_pchar},
-				{"pstr", f_pstr},
+				{"sub", wzqf_sb},
+				{"div", wqz_dv},
+				{"mul", wzqf_ml},
+				{"mod", wzq_md},
+				{"pchar", wzqf_chr},
+				{"pstr", wqzf_pr},
 				{"rotl", f_rotl},
-				{"rotr", f_rotr},
-				{"queue", f_queue},
-				{"stack", f_stack},
+				{"rotr", wzqf_rt},
+				{"queue", wzqf_que},
+				{"stack", wzqf_tk},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;
 	char *op;
 
-	op = strtok(content, " \n\t");
+	op = strtok(wzqctt, " \n\t");
 	if (op && op[0] == '#')
 		return (0);
 	bus.arg = strtok(NULL, " \n\t");
 	while (opst[i].opcode && op)
 	{
 		if (strcmp(op, opst[i].opcode) == 0)
-		{	opst[i].f(stack, counter);
+		{	opst[i].f(stack, wzqcnt);
 			return (0);
 		}
 		i++;
 	}
 	if (op && opst[i].opcode == NULL)
-	{ fprintf(stderr, "L%d: unknown instruction %s\n", counter, op);
+	{ fprintf(stderr, "L%d: unknown instruction %s\n", wzqcnt, op);
 		fclose(file);
-		free(content);
+		free(wzqctt);
 		free_stack(*stack);
 		exit(EXIT_FAILURE); }
 	return (1);
