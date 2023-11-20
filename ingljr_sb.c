@@ -27,3 +27,5 @@ void wzqf_sb(stack_t **wzqhd, unsigned int counter)
 	*wzqhd = aux->next;
 	free(aux);
 }
+
+
