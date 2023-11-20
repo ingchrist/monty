@@ -24,3 +24,5 @@ void f_rotl(stack_t **head,  __attribute__((unused)) unsigned int counter)
 	(*head)->prev = wqztmp;
 	(*head) = wqzax;
 }
+
+
