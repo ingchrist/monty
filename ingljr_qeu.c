@@ -46,3 +46,5 @@ void wzqdque(stack_t **wzqhd, int n)
 		wzqnw_nd->prev = aux;
 	}
 }
+
+
